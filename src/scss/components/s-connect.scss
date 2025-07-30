@@ -1,0 +1,76 @@
+.s-connect {
+  &__body {
+    @include flex-center;
+    gap: 70px;
+    padding: 13px 24px;
+    border-radius: 8px;
+    background-color: var(--dark);
+    @include laptop-middle {
+      gap: 40px;
+    }
+    @include laptop-min {
+      gap: 30px;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      padding: 24px 15px;
+    }
+  }
+  &__img {
+    width: 400px;
+    display: block;
+
+    @include laptop-middle {
+      width: 300px;
+    }
+    @include laptop-min {
+      width: 230px;
+    }
+    @include tablet {
+      width: 400px;
+    }
+  }
+  &__main {
+    flex: 0 1 545px;
+    @include tablet {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    row-gap: 20px;
+
+    .input-control {
+      @include tablet {
+        grid-column: 2 span;
+      }
+    }
+  }
+  &__btn {
+    grid-column: 2 span;
+    width: 100%;
+    border-radius: 8px !important;
+
+    font-size: 16px !important;
+    line-height: 125% !important;
+  }
+  &__policy {
+    font-size: 12px;
+    line-height: 133%;
+    margin: 12px 0px 0px 0px;
+
+    a {
+      text-decoration: underline;
+      transition: color .2s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
+  }
+}

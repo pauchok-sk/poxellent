@@ -1,0 +1,36 @@
+.s-offer {
+  &__body {
+    @include flex-between;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: var(--dark);
+    gap: 20px;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include tablet-min {
+      padding: 24px 15px;
+    }
+  }
+  &__main {
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__content {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    margin: 0;
+  }
+  &__btn {
+    flex-shrink: 0;
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+}

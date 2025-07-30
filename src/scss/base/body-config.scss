@@ -1,0 +1,13 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.body {
+  background-color: var(--black);
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.sect-m {
+  margin: 32px 0px;
+}
